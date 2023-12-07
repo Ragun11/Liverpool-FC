@@ -35,11 +35,10 @@
 
     <h2>Playing 16 Players</h2>
     <ul id="playersList">
-        <!-- Player details will be added here dynamically using JavaScript -->
+        <!-- Player details will be added here -->
     </ul>
 
     <script>
-        // Sample data for 16 players
         const playersData = [
             { name: 'Mohamed Salah', country: 'Egypt', position: 'Forward', number: 11 },
             { name: 'Sadio Mane', country: 'Senegal', position: 'Forward', number: 10 },
