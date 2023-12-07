@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool FC Players</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            color: #c8102e;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Liverpool FC</h1>
+    <img src="liverpool_logo.jpg" alt="Liverpool FC Logo">
+
+    <h2>Playing 16 Players</h2>
+    <ul id="playersList">
+        <!-- Player details will be added here dynamically using JavaScript -->
+    </ul>
+
+    <script>
+        // Sample data for 16 players
+        const playersData = [
+            { name: 'Mohamed Salah', country: 'Egypt', position: 'Forward', number: 11 },
+            { name: 'Sadio Mane', country: 'Senegal', position: 'Forward', number: 10 },
+            { name: 'Virgil van Dijk', country: 'Netherlands', position: 'Defender', number: 4 },
+            { name: 'Alisson Becker', country: 'Brazil', position: 'Goalkeeper', number: 1 },
+            { name: 'Roberto Firmino', country: 'Brazil', position: 'Forward', number: 9 },
+            { name: 'Jordan Henderson', country: 'England', position: 'Midfielder', number: 14 },
+            { name: 'Andrew Robertson', country: 'Scotland', position: 'Defender', number: 26 },
+            { name: 'Trent Alexander-Arnold', country: 'England', position: 'Defender', number: 66 },
+            { name: 'Fabinho', country: 'Brazil', position: 'Midfielder', number: 3 },
+            { name: 'Joel Matip', country: 'Cameroon', position: 'Defender', number: 32 },
+            { name: 'James Milner', country: 'England', position: 'Midfielder', number: 7 },
+            { name: 'Naby Keita', country: 'Guinea', position: 'Midfielder', number: 8 },
+            { name: 'Thiago Alcantara', country: 'Spain', position: 'Midfielder', number: 6 },
+            { name: 'Diogo Jota', country: 'Portugal', position: 'Forward', number: 20 },
+            { name: 'Joe Gomez', country: 'England', position: 'Defender', number: 12 },
+            { name: 'Divock Origi', country: 'Belgium', position: 'Forward', number: 27 },
+        ];
+
+        // Function to display player details
+        function displayPlayers() {
+            const playersList = document.getElementById('playersList');
+
+            playersData.forEach(player => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${player.name} - ${player.position} - ${player.country} - Jersey Number: ${player.number}`;
+                playersList.appendChild(listItem);
+            });
+        }
+
+        // Call the function to display players when the page loads
+        window.onload = displayPlayers;
+    </script>
+</body>
+</html>
