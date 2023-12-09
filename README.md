@@ -1,6 +1,9 @@
 **Liverpool FC Players Webpage**
 This project is a web application that showcases information about 16 Liverpool FC players. The webpage is designed to dynamically generate and display player details using JavaScript. It provides an interactive and visually appealing interface for users to explore information about their favorite football players.
 
+https://ragun11.github.io/Liverpool-FC/
+
+
 **Preview**
 Liverpool FC Players
 
